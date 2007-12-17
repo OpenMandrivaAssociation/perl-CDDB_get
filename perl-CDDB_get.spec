@@ -15,7 +15,6 @@ Source:		http://www.cpan.org/modules/by-module/CDDB_get/%{module}-%{version}.tar
 Buildrequires:	perl-devel
 %endif
 Buildarch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This module/script gets the CDDB info for an audio cd.
