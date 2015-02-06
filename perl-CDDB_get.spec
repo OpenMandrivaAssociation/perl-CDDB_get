@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Release:	5
 
 Summary:	Read the CDDB entry for an audio CD in your drive	
 License:	GPL+ or Artistic
