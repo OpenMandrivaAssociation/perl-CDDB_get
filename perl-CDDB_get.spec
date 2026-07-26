@@ -1,15 +1,13 @@
 %define	upstream_name	 CDDB_get
-%define upstream_version 2.27
-
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	2.27
+Release:	6
 
 Summary:	Read the CDDB entry for an audio CD in your drive	
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/CDDB_get/%{upstream_name}-%{upstream_version}.tar.gz
+URL:		https://metacpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module/CDDB_get/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -19,7 +17,7 @@ BuildArch:	noarch
 This module/script gets the CDDB info for an audio cd.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -44,8 +42,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 * Sun Jul 12 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 2.270.0-1mdv2011.0
 + Revision: 395035
 - update to 2.27
-- using %%perl_convert_version
-- fixed license field
+- using %2.27 fixed license field
 
 * Wed Jul 30 2008 Thierry Vignaud <tv@mandriva.org> 2.23-5mdv2009.0
 + Revision: 255611
