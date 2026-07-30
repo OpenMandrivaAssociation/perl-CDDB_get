@@ -1,13 +1,14 @@
 %define	upstream_name	 CDDB_get
+%define upstream_version 2.28
 Name:		perl-%{upstream_name}
-Version:	2.27
-Release:	6
+Version:	2.28
+Release:	1
 
 Summary:	Read the CDDB entry for an audio CD in your drive	
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		https://metacpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/CDDB_get/%{upstream_name}-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/F/FO/FONKIE/CDDB_get-2.28.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
