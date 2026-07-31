@@ -1,7 +1,7 @@
 %define	upstream_name	 CDDB_get
 %define upstream_version 2.28
 Name:		perl-%{upstream_name}
-Version:	2.28
+Version:	2.28.1
 Release:	1
 
 Summary:	Read the CDDB entry for an audio CD in your drive	
@@ -18,7 +18,7 @@ BuildArch:	noarch
 This module/script gets the CDDB info for an audio cd.
 
 %prep
-%setup -q -n %{upstream_name}-%{version}
+%setup -q -n CDDB_get-2.28
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
